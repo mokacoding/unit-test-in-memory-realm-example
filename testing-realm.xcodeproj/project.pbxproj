@@ -17,6 +17,8 @@
 		3FD856311B3FD10000D72BE0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD8562F1B3FD10000D72BE0 /* RealmSwift.framework */; };
 		3FD856371B3FD47800D72BE0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD856331B3FD45B00D72BE0 /* Nimble.framework */; };
 		3FD856381B3FD47800D72BE0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD856341B3FD45B00D72BE0 /* Quick.framework */; };
+		3FD8563B1B3FD7DE00D72BE0 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */; };
+		3FD8563D1B3FD84400D72BE0 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563C1B3FD84400D72BE0 /* Pizza.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		3FD8562F1B3FD10000D72BE0 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		3FD856331B3FD45B00D72BE0 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		3FD856341B3FD45B00D72BE0 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		3FD8563C1B3FD84400D72BE0 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				3FD856141B3FD03A00D72BE0 /* Images.xcassets */,
 				3FD856161B3FD03A00D72BE0 /* LaunchScreen.xib */,
 				3FD8560B1B3FD03A00D72BE0 /* Supporting Files */,
+				3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */,
+				3FD8563C1B3FD84400D72BE0 /* Pizza.swift */,
 			);
 			path = "testing-realm";
 			sourceTree = "<group>";
@@ -306,8 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD8563D1B3FD84400D72BE0 /* Pizza.swift in Sources */,
 				3FD856101B3FD03A00D72BE0 /* ViewController.swift in Sources */,
 				3FD8560E1B3FD03A00D72BE0 /* AppDelegate.swift in Sources */,
+				3FD8563B1B3FD7DE00D72BE0 /* Ingredient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
