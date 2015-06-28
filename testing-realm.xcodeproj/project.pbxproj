@@ -12,13 +12,14 @@
 		3FD856131B3FD03A00D72BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD856111B3FD03A00D72BE0 /* Main.storyboard */; };
 		3FD856151B3FD03A00D72BE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD856141B3FD03A00D72BE0 /* Images.xcassets */; };
 		3FD856181B3FD03A00D72BE0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD856161B3FD03A00D72BE0 /* LaunchScreen.xib */; };
-		3FD856241B3FD03A00D72BE0 /* testing_realmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD856231B3FD03A00D72BE0 /* testing_realmTests.swift */; };
+		3FD856241B3FD03A00D72BE0 /* PizzaControllerInMemorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD856231B3FD03A00D72BE0 /* PizzaControllerInMemorySpec.swift */; };
 		3FD856301B3FD10000D72BE0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD8562E1B3FD10000D72BE0 /* Realm.framework */; };
 		3FD856311B3FD10000D72BE0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD8562F1B3FD10000D72BE0 /* RealmSwift.framework */; };
 		3FD856371B3FD47800D72BE0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD856331B3FD45B00D72BE0 /* Nimble.framework */; };
 		3FD856381B3FD47800D72BE0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD856341B3FD45B00D72BE0 /* Quick.framework */; };
 		3FD8563B1B3FD7DE00D72BE0 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */; };
 		3FD8563D1B3FD84400D72BE0 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563C1B3FD84400D72BE0 /* Pizza.swift */; };
+		3FD8563F1B3FD88500D72BE0 /* PizzaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563E1B3FD88500D72BE0 /* PizzaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +42,14 @@
 		3FD856171B3FD03A00D72BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3FD8561D1B3FD03A00D72BE0 /* testing-realmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "testing-realmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD856221B3FD03A00D72BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FD856231B3FD03A00D72BE0 /* testing_realmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testing_realmTests.swift; sourceTree = "<group>"; };
+		3FD856231B3FD03A00D72BE0 /* PizzaControllerInMemorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaControllerInMemorySpec.swift; sourceTree = "<group>"; };
 		3FD8562E1B3FD10000D72BE0 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		3FD8562F1B3FD10000D72BE0 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		3FD856331B3FD45B00D72BE0 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		3FD856341B3FD45B00D72BE0 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		3FD8563C1B3FD84400D72BE0 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		3FD8563E1B3FD88500D72BE0 /* PizzaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3FD8560B1B3FD03A00D72BE0 /* Supporting Files */,
 				3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */,
 				3FD8563C1B3FD84400D72BE0 /* Pizza.swift */,
+				3FD8563E1B3FD88500D72BE0 /* PizzaController.swift */,
 			);
 			path = "testing-realm";
 			sourceTree = "<group>";
@@ -120,7 +123,7 @@
 		3FD856201B3FD03A00D72BE0 /* testing-realmTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FD856231B3FD03A00D72BE0 /* testing_realmTests.swift */,
+				3FD856231B3FD03A00D72BE0 /* PizzaControllerInMemorySpec.swift */,
 				3FD856211B3FD03A00D72BE0 /* Supporting Files */,
 			);
 			path = "testing-realmTests";
@@ -316,6 +319,7 @@
 				3FD856101B3FD03A00D72BE0 /* ViewController.swift in Sources */,
 				3FD8560E1B3FD03A00D72BE0 /* AppDelegate.swift in Sources */,
 				3FD8563B1B3FD7DE00D72BE0 /* Ingredient.swift in Sources */,
+				3FD8563F1B3FD88500D72BE0 /* PizzaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD856241B3FD03A00D72BE0 /* testing_realmTests.swift in Sources */,
+				3FD856241B3FD03A00D72BE0 /* PizzaControllerInMemorySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
