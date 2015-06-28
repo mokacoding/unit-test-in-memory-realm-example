@@ -20,6 +20,7 @@
 		3FD8563B1B3FD7DE00D72BE0 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */; };
 		3FD8563D1B3FD84400D72BE0 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563C1B3FD84400D72BE0 /* Pizza.swift */; };
 		3FD8563F1B3FD88500D72BE0 /* PizzaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563E1B3FD88500D72BE0 /* PizzaController.swift */; };
+		3FD856411B400D4900D72BE0 /* PizzaControllerOnDiskSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD856401B400D4900D72BE0 /* PizzaControllerOnDiskSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		3FD8563C1B3FD84400D72BE0 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		3FD8563E1B3FD88500D72BE0 /* PizzaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaController.swift; sourceTree = "<group>"; };
+		3FD856401B400D4900D72BE0 /* PizzaControllerOnDiskSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaControllerOnDiskSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				3FD856231B3FD03A00D72BE0 /* PizzaControllerInMemorySpec.swift */,
 				3FD856211B3FD03A00D72BE0 /* Supporting Files */,
+				3FD856401B400D4900D72BE0 /* PizzaControllerOnDiskSpec.swift */,
 			);
 			path = "testing-realmTests";
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD856411B400D4900D72BE0 /* PizzaControllerOnDiskSpec.swift in Sources */,
 				3FD856241B3FD03A00D72BE0 /* PizzaControllerInMemorySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
