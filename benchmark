@@ -1,0 +1,24 @@
+#!/bin/bash
+# Edit the value of iteration in the TestConfigruation struct to probe with differnt amounts of database accesses.
+
+sample_size=3
+
+for i in $(seq 1 $sample_size)
+do
+  echo "In memory unit test, sample no. $i"
+  set -o pipefail && xcrun xcodebuild \
+    -project testing-realm.xcodeproj \
+    -scheme testing-realm-in-memory \
+    -sdk iphonesimulator \
+    clean test | xcpretty --test --color
+done
+
+for i in $(seq 1 $sample_size)
+do
+  echo "On disk unit test, sample no. $j"
+  set -o pipefail && xcrun xcodebuild \
+    -project testing-realm.xcodeproj \
+    -scheme testing-realm-on-disk \
+    -sdk iphonesimulator \
+    clean test | xcpretty --test --color
+done
