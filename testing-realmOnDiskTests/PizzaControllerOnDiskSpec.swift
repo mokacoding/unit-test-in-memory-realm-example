@@ -31,6 +31,16 @@ class PizzaControllerOnDiskSpec: QuickSpec {
 
                 expect(testRealm.objects(Pizza).count).to(equal(1))
             }
+
+            it("adds the Pizza to the Realm other \(TestConfiguration().iterations) times, to test the speed") {
+                let end = TestConfiguration().iterations
+                for i in 0..<end {
+                    let p = Pizza()
+                    p.name = "Margherita"
+                    sut.addPizza(p)
+                }
+                expect(testRealm.objects(Pizza).count).to(equal(end + 1))
+            }
         }
     }
 }

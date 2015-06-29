@@ -5,7 +5,7 @@ import testing_realm
 
 class PizzaControllerInMemorySpec: QuickSpec {
     override func spec() {
-        describe("PizzaController") {
+        pending("PizzaController") {
             var testRealm: Realm!
             var sut: PizzaController!
 
@@ -30,8 +30,8 @@ class PizzaControllerInMemorySpec: QuickSpec {
                 expect(testRealm.objects(Pizza).count).to(equal(1))
             }
 
-            it("adds the Pizza to the Realm other \(TestConfiguration().iterations) times, to test the speed") {
-                let end = TestConfiguration().iterations
+            it("adds the Pizza to the Realm other 99 times, to test the speed") {
+                let end = 100
                 for i in 0..<end {
                     let p = Pizza()
                     p.name = "Margherita"

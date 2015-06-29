@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F6EC7DD1B411AEB0089F555 /* PizzaControllerOnDiskSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EC7DC1B411AEB0089F555 /* PizzaControllerOnDiskSpec.swift */; };
+		3F6EC7DF1B411B410089F555 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD856331B3FD45B00D72BE0 /* Nimble.framework */; };
+		3F6EC7E01B411B410089F555 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD856341B3FD45B00D72BE0 /* Quick.framework */; };
+		3F6EC7E21B411B6F0089F555 /* TestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EC7E11B411B6F0089F555 /* TestConfiguration.swift */; };
 		3FD8560E1B3FD03A00D72BE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8560D1B3FD03A00D72BE0 /* AppDelegate.swift */; };
 		3FD856101B3FD03A00D72BE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8560F1B3FD03A00D72BE0 /* ViewController.swift */; };
 		3FD856131B3FD03A00D72BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD856111B3FD03A00D72BE0 /* Main.storyboard */; };
@@ -20,10 +24,16 @@
 		3FD8563B1B3FD7DE00D72BE0 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */; };
 		3FD8563D1B3FD84400D72BE0 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563C1B3FD84400D72BE0 /* Pizza.swift */; };
 		3FD8563F1B3FD88500D72BE0 /* PizzaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8563E1B3FD88500D72BE0 /* PizzaController.swift */; };
-		3FD856411B400D4900D72BE0 /* PizzaControllerOnDiskSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD856401B400D4900D72BE0 /* PizzaControllerOnDiskSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3F6EC7D01B411A850089F555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD856001B3FD03A00D72BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FD856071B3FD03A00D72BE0;
+			remoteInfo = "testing-realm";
+		};
 		3FD8561E1B3FD03A00D72BE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3FD856001B3FD03A00D72BE0 /* Project object */;
@@ -34,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F6EC7CA1B411A850089F555 /* testing-realmOnDiskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "testing-realmOnDiskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6EC7CD1B411A850089F555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F6EC7DC1B411AEB0089F555 /* PizzaControllerOnDiskSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaControllerOnDiskSpec.swift; sourceTree = "<group>"; };
+		3F6EC7E11B411B6F0089F555 /* TestConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConfiguration.swift; sourceTree = "<group>"; };
 		3FD856081B3FD03A00D72BE0 /* testing-realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testing-realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD8560C1B3FD03A00D72BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD8560D1B3FD03A00D72BE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,10 +65,18 @@
 		3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		3FD8563C1B3FD84400D72BE0 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		3FD8563E1B3FD88500D72BE0 /* PizzaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaController.swift; sourceTree = "<group>"; };
-		3FD856401B400D4900D72BE0 /* PizzaControllerOnDiskSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaControllerOnDiskSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F6EC7C71B411A850089F555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6EC7DF1B411B410089F555 /* Nimble.framework in Frameworks */,
+				3F6EC7E01B411B410089F555 /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FD856051B3FD03A00D72BE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,12 +98,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F6EC7CB1B411A850089F555 /* testing-realmOnDiskTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F6EC7DC1B411AEB0089F555 /* PizzaControllerOnDiskSpec.swift */,
+				3F6EC7CC1B411A850089F555 /* Supporting Files */,
+			);
+			path = "testing-realmOnDiskTests";
+			sourceTree = "<group>";
+		};
+		3F6EC7CC1B411A850089F555 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F6EC7CD1B411A850089F555 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		3FD855FF1B3FD03A00D72BE0 = {
 			isa = PBXGroup;
 			children = (
 				3FD8562D1B3FD0E800D72BE0 /* Frameworks */,
 				3FD8560A1B3FD03A00D72BE0 /* testing-realm */,
 				3FD856201B3FD03A00D72BE0 /* testing-realmTests */,
+				3F6EC7CB1B411A850089F555 /* testing-realmOnDiskTests */,
 				3FD856091B3FD03A00D72BE0 /* Products */,
 			);
 			indentWidth = 4;
@@ -94,6 +134,7 @@
 			children = (
 				3FD856081B3FD03A00D72BE0 /* testing-realm.app */,
 				3FD8561D1B3FD03A00D72BE0 /* testing-realmTests.xctest */,
+				3F6EC7CA1B411A850089F555 /* testing-realmOnDiskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +151,7 @@
 				3FD8563A1B3FD7DE00D72BE0 /* Ingredient.swift */,
 				3FD8563C1B3FD84400D72BE0 /* Pizza.swift */,
 				3FD8563E1B3FD88500D72BE0 /* PizzaController.swift */,
+				3F6EC7E11B411B6F0089F555 /* TestConfiguration.swift */,
 			);
 			path = "testing-realm";
 			sourceTree = "<group>";
@@ -127,7 +169,6 @@
 			children = (
 				3FD856231B3FD03A00D72BE0 /* PizzaControllerInMemorySpec.swift */,
 				3FD856211B3FD03A00D72BE0 /* Supporting Files */,
-				3FD856401B400D4900D72BE0 /* PizzaControllerOnDiskSpec.swift */,
 			);
 			path = "testing-realmTests";
 			sourceTree = "<group>";
@@ -154,6 +195,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3F6EC7C91B411A850089F555 /* testing-realmOnDiskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6EC7D41B411A850089F555 /* Build configuration list for PBXNativeTarget "testing-realmOnDiskTests" */;
+			buildPhases = (
+				3F6EC7C61B411A850089F555 /* Sources */,
+				3F6EC7C71B411A850089F555 /* Frameworks */,
+				3F6EC7C81B411A850089F555 /* Resources */,
+				3F6EC7DE1B411B0E0089F555 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F6EC7D11B411A850089F555 /* PBXTargetDependency */,
+			);
+			name = "testing-realmOnDiskTests";
+			productName = "testing-realmOnDiskTests";
+			productReference = 3F6EC7CA1B411A850089F555 /* testing-realmOnDiskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3FD856071B3FD03A00D72BE0 /* testing-realm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FD856271B3FD03A00D72BE0 /* Build configuration list for PBXNativeTarget "testing-realm" */;
@@ -202,6 +262,10 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = mokagio;
 				TargetAttributes = {
+					3F6EC7C91B411A850089F555 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 3FD856071B3FD03A00D72BE0;
+					};
 					3FD856071B3FD03A00D72BE0 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -226,11 +290,19 @@
 			targets = (
 				3FD856071B3FD03A00D72BE0 /* testing-realm */,
 				3FD8561C1B3FD03A00D72BE0 /* testing-realmTests */,
+				3F6EC7C91B411A850089F555 /* testing-realmOnDiskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3F6EC7C81B411A850089F555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FD856061B3FD03A00D72BE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +336,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"swift|h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		3F6EC7DE1B411B0E0089F555 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
 		};
 		3FD856321B3FD10B00D72BE0 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -314,6 +402,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3F6EC7C61B411A850089F555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6EC7DD1B411AEB0089F555 /* PizzaControllerOnDiskSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FD856041B3FD03A00D72BE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +418,7 @@
 				3FD856101B3FD03A00D72BE0 /* ViewController.swift in Sources */,
 				3FD8560E1B3FD03A00D72BE0 /* AppDelegate.swift in Sources */,
 				3FD8563B1B3FD7DE00D72BE0 /* Ingredient.swift in Sources */,
+				3F6EC7E21B411B6F0089F555 /* TestConfiguration.swift in Sources */,
 				3FD8563F1B3FD88500D72BE0 /* PizzaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,7 +427,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD856411B400D4900D72BE0 /* PizzaControllerOnDiskSpec.swift in Sources */,
 				3FD856241B3FD03A00D72BE0 /* PizzaControllerInMemorySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +434,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3F6EC7D11B411A850089F555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FD856071B3FD03A00D72BE0 /* testing-realm */;
+			targetProxy = 3F6EC7D01B411A850089F555 /* PBXContainerItemProxy */;
+		};
 		3FD8561F1B3FD03A00D72BE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3FD856071B3FD03A00D72BE0 /* testing-realm */;
@@ -365,6 +466,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3F6EC7D21B411A850089F555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = "testing-realmOnDiskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testing-realm.app/testing-realm";
+			};
+			name = Debug;
+		};
+		3F6EC7D31B411A850089F555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = "testing-realmOnDiskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testing-realm.app/testing-realm";
+			};
+			name = Release;
+		};
 		3FD856251B3FD03A00D72BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -550,6 +689,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F6EC7D41B411A850089F555 /* Build configuration list for PBXNativeTarget "testing-realmOnDiskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6EC7D21B411A850089F555 /* Debug */,
+				3F6EC7D31B411A850089F555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3FD856031B3FD03A00D72BE0 /* Build configuration list for PBXProject "testing-realm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
