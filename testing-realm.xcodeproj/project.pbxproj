@@ -259,6 +259,7 @@
 		3FD856001B3FD03A00D72BE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = mokagio;
 				TargetAttributes = {
@@ -696,6 +697,7 @@
 				3F6EC7D31B411A850089F555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FD856031B3FD03A00D72BE0 /* Build configuration list for PBXProject "testing-realm" */ = {
 			isa = XCConfigurationList;
