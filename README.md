@@ -6,8 +6,10 @@ It shows how to encapsulate the logic that access the realm in a single class, a
 
 You can run the `benchmark` script to run both in-memory and on-disk tests a number of times, and compare the performances.
 
+**Note:** The `in-memory-xctest` target is there to show how to write the tests without using third party testing frameworks, but is not part of the benchmark.
+
 For more info tweet me [@mokagio](http://twitter.com/mokagio).
 
 ---
 
-(c) 2015 - Giovanni Lodi
+(c) 2015-2016 - Giovanni Lodi
