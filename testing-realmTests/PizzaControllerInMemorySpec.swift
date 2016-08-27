@@ -10,12 +10,14 @@ class PizzaControllerInMemorySpec: QuickSpec {
             var sut: PizzaController!
 
             beforeEach{
-                testRealm = Realm(inMemoryIdentifier: "pizza-controller-spec")
+                testRealm = try! Realm(
+                    configuration: Realm.Configuration(inMemoryIdentifier: "pizza-controller-spec")
+                )
                 sut = PizzaController(realm: testRealm)
             }
 
             afterEach {
-                testRealm.write {
+                try! testRealm.write {
                     testRealm.deleteAll()
                 }
             }
@@ -32,7 +34,7 @@ class PizzaControllerInMemorySpec: QuickSpec {
 
             it("adds the Pizza to the Realm other \(TestConfiguration().iterations) times, to test the speed") {
                 let end = TestConfiguration().iterations
-                for i in 0..<end {
+                (0..<end).forEach { _ in
                     let p = Pizza()
                     p.name = "Margherita"
                     sut.addPizza(p)
