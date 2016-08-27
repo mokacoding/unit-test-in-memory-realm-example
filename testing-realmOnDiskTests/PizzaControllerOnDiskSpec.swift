@@ -10,16 +10,26 @@ class PizzaControllerOnDiskSpec: QuickSpec {
             var sut: PizzaController!
 
             beforeEach{
-                testRealm = Realm()
+                testRealm = try! Realm(
+                    configuration: Realm.Configuration.defaultConfiguration
+                )
                 sut = PizzaController(realm: testRealm)
             }
 
             afterEach {
-                let path = Realm.defaultPath
+                let url = testRealm.configuration.fileURL!
                 let fileManager = NSFileManager.defaultManager()
-                fileManager.removeItemAtPath(path, error: nil)
-                let lockPath = path + ".lock"
-                fileManager.removeItemAtPath(lockPath, error: nil)
+                do {
+                    try fileManager.removeItemAtURL(url)
+                } catch {
+                    // noop
+                }
+                let lockURL = url.URLByAppendingPathExtension("lock")
+                do {
+                    try fileManager.removeItemAtURL(lockURL)
+                } catch {
+                    // noop
+                }
             }
 
             it("adds the Pizza to the Realm") {
@@ -34,7 +44,7 @@ class PizzaControllerOnDiskSpec: QuickSpec {
 
             it("adds the Pizza to the Realm other \(TestConfiguration().iterations) times, to test the speed") {
                 let end = TestConfiguration().iterations
-                for i in 0..<end {
+                (0..<end).forEach { _ in
                     let p = Pizza()
                     p.name = "Margherita"
                     sut.addPizza(p)

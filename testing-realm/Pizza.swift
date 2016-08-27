@@ -1,3 +1,4 @@
+import Foundation
 import RealmSwift
 
 public class Pizza: Object {

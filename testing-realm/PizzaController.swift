@@ -8,12 +8,23 @@ public struct PizzaController {
     }
 
     public init() {
-        self.init(realm: Realm())
+        // TODO: A production app should handle this possible failure properly
+        do {
+            let realm = try Realm()
+            self.init(realm: realm)
+        } catch {
+            fatalError("\(error)")
+        }
     }
 
     public func addPizza(pizza: Pizza) {
-        realm.write {
-            self.realm.add(pizza)
+        // TODO: A production app should handle this possible failure properly
+        do {
+            try realm.write {
+                self.realm.add(pizza)
+            }
+        } catch {
+            fatalError("\(error)")
         }
     }
 }
